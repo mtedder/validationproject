@@ -14,10 +14,9 @@ public class Validation{
 	 * @param scan
 	 * @return valid integer
 	 */
-	private static int validateInt(Scanner scan) {
+	public static int validateInt(Scanner scan) {
 		while (!scan.hasNextInt()) {
-			System.out.println("Incorrect input. Input must be an integer.");
-			scan.next();
+			System.out.println(scan.next() + " is Incorrect input. Input must be an integer.");		
 		}
 		return scan.nextInt();
 	}
